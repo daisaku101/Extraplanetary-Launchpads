@@ -564,7 +564,7 @@ namespace ExtraplanetaryLaunchpads {
 				bool packed = craftVessel.packed;
 				craftVessel.loaded = true;
 				craftVessel.packed = false;
-				craftVessel.GetHeightFromTerrain ();
+				craftVessel.GetHeightFromTerrain (); //This function is causing errors when building in the newest KSP patch, 1.3.1
 				Debug.Log (String.Format ("[EL] hft {0}", craftVessel.heightFromTerrain));
 				craftVessel.loaded = loaded;
 				craftVessel.packed = packed;
